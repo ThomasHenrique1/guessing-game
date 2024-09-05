@@ -1,0 +1,135 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #005F73, #F2F2F2); /* Gradiente com verde escuro e cinza claro */
+    color: #0A4D68; /* Azul escuro para o texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Container geral */
+.container {
+    background-color: #ffffff; /* Fundo branco para o container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Largura máxima ajustada */
+    width: 90%; /* Ajusta a largura para 90% da tela */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    max-height: 600px; /* Altura máxima ajustada */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+/* Título */
+h1 {
+    color: #2C6B7B; /* Azul profundo para o título */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Parágrafo de regras */
+#regras {
+    color: #0A4D68; /* Azul escuro para o texto das regras */
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Painel de tentativas */
+.panel {
+    background-color: #1F2A38; /* Cinza escuro para o painel de tentativas */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#tentativas {
+    color: #F2A950; /* Amarelo alaranjado para destaque */
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    color: #0A4D68; /* Azul escuro para os labels */
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Inputs de texto */
+input[type="text"] {
+    width: calc(100% - 22px); /* Ajusta largura para caber dentro do padding e da borda */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #005F73; /* Borda verde escuro */
+    border-radius: 5px;
+    background-color: #ffffff; /* Fundo branco dos inputs */
+    color: #333; /* Texto escuro para contraste */
+    font-size: 1em;
+}
+
+/* Botões */
+button, input[type="button"] {
+    background-color: #005F73; /* Verde escuro para o botão */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ajusta para botões ficarem lado a lado */
+    text-align: center;
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: #003D40; /* Verde ainda mais escuro ao passar o mouse */
+}
+
+button#dica-especifica:disabled {
+    background-color: #AEBFBE; /* Cor neutra quando desativado */
+    cursor: not-allowed;
+}
+
+/* Botões lado a lado */
+form > button {
+    width: calc(50% - 10px); /* Ajusta largura dos botões */
+    display: inline-block; /* Mantém os botões lado a lado */
+    text-align: center;
+}
+
+/* Campo de resultado */
+#msg h1 {
+    color: #2C6B7B; /* Azul profundo para a mensagem de resultado */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Campo do número correto */
+#numero-correto {
+    color: #2C6B7B; /* Azul profundo para o texto do número correto */
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#numero {
+    color: #F2A950; /* Amarelo alaranjado para o número correto */
+    font-weight: bold;
+}

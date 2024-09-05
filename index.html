@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Jogo de Adivinhação</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo de Adivinhação</h1>
+        
+        <p id="regras">Regras: Tente adivinhar o número sorteado entre 0 e 100. Você pode clicar no botão "Dica Gratuita" para obter uma dica inicial. Após errar 5 vezes, o botão "Dica Específica" será desbloqueado, fornecendo uma dica mais precisa. Se errar mais 5 vezes, o número será revelado automaticamente.</p>
+        
+        <div class="panel">
+            <p id="tentativas">Tentativas: 0</p>
+        </div>
+
+        <form>
+            <label for="txtchute">Chute um número:</label>
+            <input type="text" id="txtchute" placeholder="Digite um número"><br>
+            
+            <input type="button" value="Verificar" id="botao"><br>
+            
+            <label for="txtdica">Dica:</label>
+            <input type="text" id="txtdica" readonly><br>
+            
+            <button type="button" id="dica-gratuita">Dica Gratuita</button>
+            <button type="button" id="dica-especifica" disabled>Dica Específica</button><br>
+        </form>
+        
+        <div id="msg"></div>
+        <p id="numero-correto" style="display: none;">Número correto: <span id="numero"></span></p>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
